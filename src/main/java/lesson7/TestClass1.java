@@ -1,0 +1,27 @@
+package lesson7;
+
+public class TestClass1 {
+    @BeforeSuite
+    public void before(){
+        System.out.println("Before test");
+    }
+    @Test(priority = 1)
+    public void testing1(){
+        System.out.println("1");
+    }
+
+    @Test(priority = 3)
+    public void testing3(){
+        System.out.println("3");
+    }
+
+    @Test(priority = 2)
+    public void testing2(){
+        System.out.println("2");
+    }
+
+    @AfterSuite
+    public void after(){
+        System.out.println("After test");
+    }
+}
